@@ -8,3 +8,7 @@ resource "aws_lb" "pika_alb" {
     "Name" = "pika-alb"
   }
 }
+
+output "dns_name" {
+  value = aws_lb.pika_alb.dns_name
+}
