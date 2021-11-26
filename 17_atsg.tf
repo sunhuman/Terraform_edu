@@ -14,5 +14,5 @@ resource "aws_autoscaling_group" "pika_atsg" {
   launch_configuration      = aws_launch_configuration.pika_lacf.name
   #placement_group           = aws_placement_group.pika_pg.id
   vpc_zone_identifier       = [aws_subnet.pika_puba.id, aws_subnet.pika_pubc.id]
-
+  
 }
